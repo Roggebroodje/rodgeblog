@@ -1,0 +1,165 @@
+html {
+	font-family:Verdana, Arial, sans-serif;
+	font-size:16px;
+}
+
+*, 
+*::after,
+*::before {
+	box-sizing: inherit;
+}
+
+body {
+	box-sizing: border-box;
+	margin:0;
+}
+
+.navbar {
+	max-width:640px;
+	margin: 50px auto;
+	padding:0 20px;
+	display:flex;
+	flex-direction:row;
+	justify-content: space-between; /* put as much space between elements as possible*/
+	font-size:24px;
+}
+
+.navbar__brand {
+	display: flex;
+	align-items: center;
+}
+
+.navbar__logo {
+	margin-right: 30px;
+}
+
+.navbar__navigation {
+	display: flex;
+	flex-direction: row;
+	padding: 0;
+	list-style: none;
+	color:#757171
+}
+
+.navbar__navigation-item {
+	margin-left:50px;	
+}
+
+.navbar__link {
+	text-decoration: none;
+	color: inherit;
+}
+
+.main {
+	max-width: 450px;
+	margin: 0 auto;
+	padding: 0 20px;	
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;	
+}
+
+.form__input{
+	width: 100%;
+}
+
+.form__textarea {
+	width: inherit; /* making it the same with as the container */
+	border-radius: 10px;
+	font-size: 18px;
+	padding: 12px 20px;
+	border: none;
+	background-color: #F1EEEE;
+	margin-bottom: 10px;
+	color:#6C6A6A;
+}
+
+.form__submit {
+	background-color: #90FF3C;
+	border: none;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 5px 30px;
+	border-radius: 20px;
+	color: white;
+	cursor: pointer;
+}
+
+.form__submit:hover{
+	background-color: #70C530;
+
+}
+
+.entry {
+	margin-top: 50px;
+
+}
+
+.entry__title {
+	display: inline; /* takes up only the space that it needs */
+	font-size: 18px;
+}
+
+.entry__date {
+	color:#515151 ;
+}
+
+.entry__content {
+	font-size: 16px;
+	line-height: 150%;
+}
+
+.footer {
+	width: 100%;
+	background-color:#38D390;
+	padding: 40px 0;
+	margin: 50px 0 0 0;
+	border-top: 5px solid #F1EEEE;
+	color: white;
+	font-size: 14px;
+}
+
+.footer__content {
+	max-width: 640px;
+	margin: 0 auto;
+	display:flex;
+	flex-direction: row;
+}
+
+.footer .left {
+	flex-grow: 2; /* how much space it take compared to others (with flex-grow argument) */
+	display:flex;
+	flex-direction:column;
+}
+
+.footer .right {
+	flex-grow: 1;
+	display:flex;
+	flex-direction: row;
+}
+
+
+.footer__column {
+	display:flex;
+	flex-direction:column;
+	margin-left: 50px;
+}
+
+.footer__item {
+	margin-bottom: 5px;
+	color:inherit;
+	text-decoration:none;
+}
+
+.footer__item:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+
+
+
+
